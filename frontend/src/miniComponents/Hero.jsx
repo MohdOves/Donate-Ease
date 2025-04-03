@@ -7,7 +7,7 @@ const Hero = () => {
       <div className='banner'>
         <h1>Volunteers</h1>
         <h3>Needed</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, autem esse nemo inventore nulla facilis atque tempore, est voluptatum laborum debitis voluptatem, quisquam et eligendi?</p>
+        <p>Welcome to Volunteer, a platform dedicated to making a difference. Founded by Mohammad Oves, our mission is to bridge the gap between those in need and those willing to help.</p>
         <Link to={"/donate"} className='btn'>Donate Now</Link>
       </div>
       <div className="banner">

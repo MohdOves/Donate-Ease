@@ -6,7 +6,7 @@ const About = () => {
       <div className="hero">
         <div className="banner">
           <h1>Our Story</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eius harum eum illum, soluta repellendus aperiam et deleniti sit ab, itaque delectus porro consectetur? Earum autem assumenda voluptatem, a expedita ratione similique iure asperiores inventore molestias, animi totam nostrum quam minus nemo ipsum? Aliquid, odit aspernatur, dolore similique eius ducimus aliquam nesciunt incidunt, quaerat ea ut error laudantium quos ratione!</p>
+          <p>Welcome to Volunteer, a platform dedicated to making a difference. Founded by Mohammad Oves, our mission is to bridge the gap between those in need and those willing to help. Whether it's supporting underprivileged communities, funding education, or providing disaster relief, Volunteer ensures that every donation reaches the right place. We believe in transparency, trust, and the power of collective giving. Join us in creating a world where generosity knows no bounds—because every act of kindness counts.</p>
         </div>
         <div className="banner">
           <img src="/about.png" alt="aboutIMG" />

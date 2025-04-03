@@ -4,47 +4,45 @@ const Members = () => {
     const members=[
         {
             id:1,
-            image:"/m1.jpg",
-            title: "ALex",
+            image:"/oves.jpg",
+            title: "Oves",
         },
         {
             id:2,
-            image:"/m2.jpg",
-            title: "Jhon",
+            image:"/shehjaan.jpg",
+            title: "Shehjaan",
         },
         {
             id:3,
-            image:"/m3.jpg",
-            title: "Michael",
+            image:"/omair.jpg",
+            title: "Omair",
         },
         {
             id:4,
-            image:"/m4.jpg",
-            title: "Robert",
+            image:"/husain.jpg",
+            title: "Husain",
         },
         {
             id:5,
-            image:"/m5.jpg",
-            title: "Siri",
+            image:"/nikhil.jpg",
+            title: "Nikhil",
         },
         {
             id:6,
-            image:"/m6.jpg",
-            title: "Tobey",
+            image:"/athar.jpg",
+            title: "Athar",
         },
-        {
-            id:7,
-            image:"/m7.jpg",
-            title: "Jhon Wick",
-        }
+        
+         
     ]
   return (
     <>
       <section className='members'>
         <div className="container">
             <div className="heading_section">
-                <h2 className='heading'>MEMBERS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quibusdam rem similique tempora animi asperiores placeat quia obcaecati doloremque alias.</p>
+                <h2 className='heading'>Our Team - The Heart of Volunteer</h2>
+                <p>
+At Volunteer, we are driven by a passionate team committed to making a real impact. Led by our founder, Mohammad Oves, our members include dedicated individuals from diverse backgrounds—tech enthusiasts, social workers, and changemakers—who work together to ensure a seamless and transparent donation experience. Each member plays a vital role in managing campaigns, building connections, and ensuring that every contribution makes a difference. We believe that teamwork fuels change, and together, we strive to create a better, more compassionate world.</p>
             </div>
             <div className="members_container">
                 {
