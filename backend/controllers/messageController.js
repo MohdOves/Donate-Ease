@@ -2,10 +2,10 @@ import {Message} from "../models/message.js"
 
 export const postMessage = async(req,res,next)=>{
     const {name,email,phone,message} = req.body;
-    if(!name, !email, !phone, !message){
-        return res.status(404).json({
+    if(!name || !email || !phone || !message){
+        return res.status(400).json({
             success:false,
-            message:"Please Fill Full Form",
+            message:"Please fill all required fields",
         })
     }
     try {
