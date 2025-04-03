@@ -1,3 +1,32 @@
+# Environment files
+.env
+.env.*
+!.env.example
+config.env
+# Dependencies
+node_modules/
+package-lock.json
+config.env
+# Build directories
+dist/
+build/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
 # Logs
 logs
 *.log
@@ -11,8 +40,6 @@ node_modules
 dist
 dist-ssr
 *.local
-
-
 
 # Editor directories and files
 .vscode/*
