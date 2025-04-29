@@ -407,6 +407,11 @@ footer div ul a span {
   transition: 0.3s;
 }
 
+.navbar .links ul li a.active {
+  color: #facc15;
+  transition: 0.3s;
+}
+
 .navbar .links ul:last-child {
   gap: 20px;
   display: flex;

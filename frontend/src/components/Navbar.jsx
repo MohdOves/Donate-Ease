@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import {FaLinkedin, FaX, FaSquareGithub} from "react-icons/fa6"
 import {BsInstagram} from "react-icons/bs"
 import {GiHamburgerMenu} from "react-icons/gi"
@@ -29,6 +29,22 @@ const Navbar = () => {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, [show]);
 
+    const navItems = [
+        {
+            name: "HOME",
+            slug: "/"
+        },{
+            name: "DONATE US",
+            slug: "/donate"
+        },{
+            name: "ABOUT",
+            slug: "/about"
+        },{
+            name: "CONTACT",
+            slug: "/contact"
+        }
+    ]
+
     return (
         <>
             <nav className={show ? "navbar navbar_show" : "navbar"}>
@@ -37,10 +53,16 @@ const Navbar = () => {
                 </div>
                 <div className={`links ${show ? 'show' : ''}`}>
                     <ul>
-                        <li><Link to={"/"} onClick={() => setShow(false)}>HOME</Link></li>
-                        <li><Link to={"/donate"} onClick={() => setShow(false)}>DONATE US</Link></li>
-                        <li><Link to={"/about"} onClick={() => setShow(false)}>ABOUT</Link></li>
-                        <li><Link to={"/contact"} onClick={() => setShow(false)}>CONTACT</Link></li>
+                        {navItems.map((item)=>(
+                            <li onClick={() => setShow(false)}>
+                            <NavLink key={item.name} to={item.slug}  className={({isActive})=>`${isActive? "active":""}`}> 
+                                
+                                    {item.name}
+                                
+                            </NavLink>
+                            </li>
+                        ))}
+                        
                     </ul>
                     <ul>
                         <li>
